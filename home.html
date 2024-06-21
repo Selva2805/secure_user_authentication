@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            text-align: center;
+        }
+
+        .w {
+            color: #ffffff;
+            margin-top: 50px;
+        }
+
+        .right-section {
+            margin: 20px auto;
+        }
+
+        .right-section .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            background-color: yellow;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .right-section .button:hover {
+            background-color: #0056b3;
+        }
+        .left-section{
+            color: yellow;
+            text-align: left;
+            margin-left: 2%;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-section">
+        <h1>Homepage.</h1>
+    </div>
+    <h1 class="w">Welcome to the Home Page</h1>
+    <div class="right-section">
+        <a href="{% url 'signup' %}" class="button">Sign-up</a>
+        <a href="{% url 'login' %}" class="button">Login</a>
+        <a href="{% url 'logout' %}" class="button">Logout</a>
+    </div>
+</body>
+</html>
